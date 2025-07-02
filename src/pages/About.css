@@ -45,7 +45,7 @@
 }
 
 /* ==== BRIGHT WHITE SHINING STARS ==== */
-.about-section::after {
+/* .about-section::after {
   content: "";
   position: absolute;
   top: 0;
@@ -62,7 +62,7 @@
   animation: starsMove 120s linear infinite;
   opacity: 0.35;
   filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 4px #ffffffaa);
-}
+} */
 
 @keyframes starsMove {
   0% {
