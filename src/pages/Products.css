@@ -1,0 +1,171 @@
+/* ==== PRODUCTS SECTION ==== */
+.products-wrapper {
+  padding: 60px 20px;
+  background-color: #000;
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* ✨ Strong Shining Stars */
+.products-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 300%;
+  background-image: 
+    radial-gradient(circle, rgba(255, 255, 255, 0.22) 1px, transparent 1px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.12) 1px, transparent 1px),
+    radial-gradient(circle, rgba(0, 195, 255, 0.08) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: moveStars 60s linear infinite;
+  z-index: 0;
+  opacity: 0.5;
+  pointer-events: none;
+  filter: blur(0.3px);
+}
+
+@keyframes moveStars {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-150px, -150px);
+  }
+}
+
+/* ==== HEADING ==== */
+.products-heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #00c3ff;
+  margin-bottom: 40px;
+  text-shadow: 0 0 8px rgba(0, 195, 255, 0.5);
+  position: relative;
+  z-index: 2;
+}
+
+/* ==== GRID ==== */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 0 10px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ==== PRODUCT CARD ==== */
+.product-card {
+  background: #000; /* Fully black */
+  color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(11, 102, 147, 0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeUp 0.8s ease-in-out forwards;
+  animation-delay: calc(0.1s * var(--i));
+  position: relative;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(0, 195, 255, 0.2);
+}
+
+.product-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 0 20px rgba(0, 195, 255, 0.4), 0 0 40px rgba(0, 195, 255, 0.2);
+  border-color: rgba(0, 195, 255, 0.5);
+}
+
+.product-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.product-card:hover::before {
+  opacity: 1;
+}
+
+/* ==== IMAGE ==== */
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #000; /* dark bg behind image */
+  filter: brightness(0.85) contrast(1.1);
+}
+
+/* ==== TEXT ==== */
+.product-card h3 {
+  font-size: 1.3rem;
+  margin: 16px 0 6px;
+  color: #00c3ff;
+  text-shadow: 0 0 5px rgba(0, 195, 255, 0.4);
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  padding: 0 15px 20px;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+/* ==== BUTTON ==== */
+.view-btn {
+  margin: 0 auto 20px;
+  padding: 10px 20px;
+  background-color: #00c3ff;
+  color: #000;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #009edc;
+  color: #fff;
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(0, 195, 255, 0.6);
+}
+
+/* ==== FADE UP ==== */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .products-heading {
+    font-size: 2rem;
+  }
+
+  .view-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}

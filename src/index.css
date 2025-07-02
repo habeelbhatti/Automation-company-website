@@ -1,0 +1,21 @@
+/* index.css */
+:root {
+  --bg: #ffffff;
+  --text: #121212;
+  --primary: #00bcd4;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #ffffff;
+  --primary: #00e5ff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
