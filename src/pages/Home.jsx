@@ -19,8 +19,8 @@ const Home = () => {
     { name: 'Fatima Fertilizer', image: fatima, description: 'Leading fertilizer producer in Pakistan supporting agriculture innovation.', link: 'https://www.fatima-group.com/' },
     { name: 'Nestle', image: nestle, description: 'Global leader in food & beverages with strong presence in Pakistan.', link: 'https://www.nestle.pk/' },
     { name: 'Unilever', image: unilever, description: 'Top multinational company in personal care, hygiene, and home products.', link: 'https://www.unilever.pk/' },
-    { name: 'BigBoard', image: bigboard, description: 'Premium outdoor advertising and digital display network.', link: 'https://bigbirdfoods.com/' },
-    { name: 'Guard Packages Limited', image: guard, description: 'Innovative packaging solutions provider for top national brands.', link: 'https://guardgroup.pk/' },
+    { name: 'BigBird', image: bigboard, description: 'Premium outdoor advertising and digital display network.', link: 'https://bigbirdfoods.com/' },
+    { name: 'Guard Rice Limited', image: guard, description: 'Innovative packaging solutions provider for top national brands.', link: 'https://guardgroup.pk/' },
     { name: 'Kashmir Cooking Oil', image: kashmir, description: 'Trusted name in quality edible oils & ghee for decades.', link: 'https://uil.com.pk/kashmir-cooking-oil-and-banaspati' },
     { name: "Mitchell's", image: mitchells, description: 'A trusted household brand in Pakistan offering quality sauces, ketchup & more.', link: 'https://www.mitchells.com.pk/brands-type/ketchup-sauces/' },
     { name: 'Engro Fertilizers', image: engro, description: 'One of the largest fertilizer manufacturers powering Pakistan’s agriculture.', link: 'https://www.engro.com/' }

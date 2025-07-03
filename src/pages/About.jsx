@@ -1,4 +1,3 @@
-// src/components/About.jsx
 import React from "react";
 import "./About.css";
 import ceoImg from "../assets/Ceoimage.jpg";
@@ -8,7 +7,6 @@ import Asad from "../assets/Asad.jpg";
 import Laiba from "../assets/laiba.jpg";
 import Aamir from "../assets/Aamir.jpg";
 import Azeem from "../assets/azeem.jpg";
-import Rana from "../assets/rana.jpg";
 import Tahir from "../assets/tahir.jpg";
 import Sagheer from "../assets/Sageer.jpg";
 import Ali from "../assets/Ali.jpg";
@@ -86,14 +84,6 @@ const staff = [
     facebook: "https://www.facebook.com/azeemabid901",
   },
   {
-    name: "Rana Muhammad Sagheer",
-    role: "Managing Director at RK Foods",
-    description:
-      "Excel in the Graphic Art Industry especially in Packaging by using my expertise.",
-    image: Rana,
-    linkedin: "https://linkedin.com/in/rana-muhammad-sagheer-3817a360",
-  },
-  {
     name: "Tahir Islam",
     role: "Service Engineer",
     description:
@@ -114,10 +104,10 @@ const staff = [
     name: "Muhammad Ali",
     role: "Senior sales representative at Automation brain private limited",
     description:
-      "Student at Government post graduate college of commerce jang",
+      "Building strong client relationships and delivering innovative sales solutions to drive company growth and customer satisfaction",
     image: Ali,
     linkedin: "https://www.linkedin.com/in/muhammad-ali-6b7b92241/",
-    facebook:"https://www.facebook.com/muhammad.ali.968382"
+    facebook: "https://www.facebook.com/muhammad.ali.968382",
   },
 ];
 

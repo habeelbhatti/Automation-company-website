@@ -30,58 +30,18 @@
   z-index: 2;
 }
 
-/* ==== SHINING SVG TOP WAVE ==== */
-.about-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 140px;
-  width: 100%;
-  z-index: 1;
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1440 320' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23003b70' fill-opacity='1' d='M0,96L48,112C96,128,192,160,288,154.7C384,149,480,107,576,117.3C672,128,768,192,864,197.3C960,203,1056,149,1152,112C1248,75,1344,53,1392,42.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z'/%3E%3C/svg%3E") no-repeat top center;
-  background-size: cover;
-  opacity: 1;
-}
-
-/* ==== BRIGHT WHITE SHINING STARS ==== */
-/* .about-section::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 0;
-  background-image:
-    radial-gradient(white 1px, transparent 1px),
-    radial-gradient(white 1.2px, transparent 1.2px),
-    radial-gradient(white 0.8px, transparent 0.8px);
-  background-size: 40px 40px, 60px 60px, 80px 80px;
-  background-position: 0 0, 20px 20px, 40px 40px;
-  animation: starsMove 120s linear infinite;
-  opacity: 0.35;
-  filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 4px #ffffffaa);
-} */
-
-@keyframes starsMove {
-  0% {
-    background-position: 0 0, 20px 20px, 40px 40px;
-  }
-  100% {
-    background-position: 1000px 1000px, 1020px 1020px, 1040px 1040px;
-  }
-}
-
 /* ==== CARD CONTAINER ==== */
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically if height allows */
   gap: 2rem;
   width: 100%;
-  z-index: 2;
-  position: relative;
+  max-width: 1400px;       /* prevent overflow on ultra-wide screens */
+  margin: 0 auto;          /* center the whole container */
+  box-sizing: border-box;
+  padding: 0 1rem;
 }
 
 /* ==== ABOUT CARD ==== */
@@ -91,15 +51,14 @@
   border-radius: 20px;
   padding: 2rem;
   width: 320px;
-  max-width: 100%;
+  max-width: 90%;          /* shrink if screen width is too small */
   box-shadow: 0 15px 35px rgba(237, 233, 233, 0.08);
   transition: all 0.4s ease;
   border: 2px solid transparent;
   animation: cardSlideUp 0.6s ease forwards;
   opacity: 0;
   text-align: center;
-  transform-style: preserve-3d;
-  perspective: 1000px;
+  margin: 0 auto;          /* force horizontal centering */
 }
 
 .about-card:hover {
@@ -190,24 +149,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0;
-    margin: 0 auto;
-    width: 100%;
+    gap: 1.5rem;
   }
 
   .about-card {
-    width: 100%;
+    width: 90%;
     max-width: 300px;
-    padding: 1.2rem;
-    margin: 1rem auto;
-    border-radius: 16px;
+    margin: 0 auto;
   }
 
   .profile-img {
     width: 100px;
     height: 100px;
-    margin-bottom: 0.8rem;
-    border: 3px solid #e60000;
   }
 
   .about-card h3 {
