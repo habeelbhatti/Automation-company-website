@@ -102,12 +102,12 @@ const staff = [
   },
   {
     name: "Muhammad Ali",
-    role: "Senior sales representative at Automation brain private limited",
+    role: "Senior Sales Representative",
     description:
-      "Building strong client relationships and delivering innovative sales solutions to drive company growth and customer satisfaction",
+      "Building strong client relationships and delivering innovative sales solutions to drive company growth and customer satisfaction.",
     image: Ali,
     linkedin: "https://www.linkedin.com/in/muhammad-ali-6b7b92241/",
-    facebook: "https://www.facebook.com/muhammad.ali.968382",
+    facebook:"https://www.facebook.com/muhammad.ali.968382"
   },
 ];
 
